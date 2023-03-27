@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 192827281}
   - component: {fileID: 192827282}
   - component: {fileID: 192827283}
+  - component: {fileID: 192827284}
   m_Layer: 0
   m_Name: Ruby
   m_TagString: Untagged
@@ -256,7 +257,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01, y: 0.3}
+  m_Offset: {x: 0.0038986802, y: 0.049822688}
   m_SpriteTilingProperty:
     border: {x: 0.26999998, y: 0, z: 0.35999998, w: 0.14}
     pivot: {x: 0.46447027, y: 0.23578812}
@@ -267,7 +268,33 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.62, y: 1.19}
+  m_Size: {x: 0.3420254, y: 0.6896455}
+  m_EdgeRadius: 0
+--- !u!61 &192827284
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192827278}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.003167808, y: 0.6092166}
+  m_SpriteTilingProperty:
+    border: {x: 0.26999998, y: 0, z: 0.35999998, w: 0.14}
+    pivot: {x: 0.46447027, y: 0.23578812}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.54336655, y: 0.4599743}
   m_EdgeRadius: 0
 --- !u!1 &198542605
 GameObject:
