@@ -225,8 +225,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 192827280}
-  - component: {fileID: 192827279}
   - component: {fileID: 192827281}
+  - component: {fileID: 192827279}
   - component: {fileID: 192827282}
   - component: {fileID: 192827284}
   m_Layer: 0
@@ -315,6 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a01acf2aa092bf4ab0d24a550d5cb1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 5
 --- !u!50 &192827282
 Rigidbody2D:
   serializedVersion: 4
@@ -402,6 +403,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1560024604}
     m_Modifications:
+    - target: {fileID: 2286928902632704924, guid: 96ceb4486df573d4e8fd2a460caee418, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8615205890354968226, guid: 96ceb4486df573d4e8fd2a460caee418, type: 3}
       propertyPath: m_Name
       value: MetalCube_
