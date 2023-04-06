@@ -19,6 +19,8 @@ public class RubyController : MonoBehaviour
     float horizontal;
     float vertical;
 
+    AudioSource audioSource;
+
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
 
@@ -27,8 +29,9 @@ public class RubyController : MonoBehaviour
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-
         currentHealth = maxHealth;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -58,8 +61,8 @@ public class RubyController : MonoBehaviour
 
         //if (Input.GetKeyDown(KeyCode.C))
         //{
-            //Launch();
-       // }
+        //Launch();
+        // }
 
         if (Input.GetKeyDown(KeyCode.X))
         {
@@ -100,13 +103,18 @@ public class RubyController : MonoBehaviour
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
     }
 
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
+    }
+
     //void Launch()
     //{
-        //GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+    //GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
 
-        //Projectile projectile = projectileObject.GetComponent<Projectile>();
-        //projectile.Launch(lookDirection, 300);
+    //Projectile projectile = projectileObject.GetComponent<Projectile>();
+    //projectile.Launch(lookDirection, 300);
 
-        //animator.SetTrigger("Launch");
+    //animator.SetTrigger("Launch");
     //}
 }
